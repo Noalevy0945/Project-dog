@@ -1,0 +1,123 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav */
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  height: 3.5vh;
+}
+
+/* dog-card */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  max-width: 500px;
+  padding-top: 1em;
+  margin: 0 auto;
+
+}
+
+
+.dog-img {
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.dog-des,
+.dog-info {
+  color: rgb(255, 255, 255);
+}
+
+.dog-info {
+  position: relative;
+  bottom: 2.8em;
+  left: 0.75em;
+  font-size: 2rem;
+}
+
+.dog-des {
+  position: relative;
+  bottom: 4em;
+  left: 1.4em;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* action buttons */
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em;
+}
+
+.btn-box {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(20, 20, 20, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cross,
+.heart {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cross:hover {
+  background-image: linear-gradient(rgb(251, 189, 199), white);
+}
+
+.heart:hover {
+  background-image: linear-gradient(rgb(142, 255, 142), white);
+}
+
+.nope-badge,
+.like-badge {
+  height: 5em;
+  transform: rotate(-0.1turn);
+  position: absolute;
+  top: 8em;
+  left: 5.5em;
+  display: none;
+}
+
+.end-msg {
+  background: rgb(242, 71, 84);
+  background: linear-gradient(
+    0deg,
+    rgba(242, 71, 84, 1) 0%,
+    rgba(255, 160, 193, 1) 100%
+  );
+  color: white;
+  font-size: 2em;
+  font-weight: 900;
+  border-radius: 2em;
+  display: flex;
+  height: 10em;
+  width: 80%;
+  max-width: 500px;
+  align-content: center;
+  justify-content: center;
+  padding-top: 7em;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
